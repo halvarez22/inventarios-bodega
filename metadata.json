@@ -1,0 +1,6 @@
+{
+  "name": "Gestión de Inventario Fotovoltaico y BESS",
+  "description": "Sistema empresarial de gestión de inventario para materiales fotovoltaicos, iluminación, de baterías BESS, herramientas y unidades móviles, con asistente de consultas impulsado por IA.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
