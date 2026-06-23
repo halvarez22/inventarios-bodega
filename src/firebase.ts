@@ -33,6 +33,10 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
+if (!firebaseConfig.apiKey) {
+  console.error("⚠️ [EnergiStock] Error: La clave API de Firebase (VITE_FIREBASE_API_KEY) está indefinida. Asegúrate de configurar las variables de entorno en Vercel sin comillas y volver a desplegar.");
+}
+
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
